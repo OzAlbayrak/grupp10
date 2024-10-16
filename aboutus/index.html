@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om oss</title>
     <link rel="stylesheet" href="../src/App.css">
+    <script>
+        fetch('../components/sections/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('imported-section-header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading section:', error));
+            
+        fetch('../components/sections/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('imported-section-footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading section:', error));
+    </script>
 </head>
 <body>
     <div class="aboutus">
+        <div id="imported-section-header"></div>
         aboutus
+        <div id="imported-section-footer"></div>
     </div>
 </body>
 </html>
