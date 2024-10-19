@@ -6,6 +6,10 @@ html, body {
   margin: 0px 0px 0px 0px;
 }
 
+.header {
+  color: #6EB5C0;
+}
+
 .home {
   font-size: 16px;
 }
