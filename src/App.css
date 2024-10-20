@@ -6,8 +6,17 @@ html, body {
   margin: 0px 0px 0px 0px;
 }
 
-.header {
-  color: #6EB5C0;
+.header a {
+  color: white;
+}
+.header .navbar-custom {
+  background-color: #6EB5C0;
+}
+.header .navbar-nav {
+  background-color: #6EB5C0;
+}
+.header ul {
+  background-color: #6EB5C0;
 }
 
 .home {

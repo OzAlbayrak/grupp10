@@ -1,3 +1,16 @@
 .header {
-    color: $color-theme-1;
+    a {
+        color: white;
+    }
+    .navbar-custom {
+        background-color: $color-theme-1;
+    }
+
+    .navbar-nav {
+        background-color: $color-theme-1;
+    }
+    ul {
+        background-color: $color-theme-1;
+    }
+
 }
