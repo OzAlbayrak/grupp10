@@ -1,6 +1,9 @@
 header {
     a {
         color: white;
+        @include desktop {  
+            color: $color-theme-3;
+        }
     }
     .navbar-custom {
         background-color: $color-theme-1;
@@ -8,6 +11,9 @@ header {
 
     .navbar-nav {
         background-color: $color-theme-1;
+        @include desktop {  
+            background-color: $color-theme-2;
+        }
     }
     ul {
         background-color: $color-theme-1;

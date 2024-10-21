@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,500&display=swap');
 
-@import './variables';
-@import './base';
+// Base
+@import './base.scss';
+
+// Variables
+@import './variables.scss';
+
+// Mixins
+@import './mixins.scss';
+@import './media-queries.scss';
 
 // Individuals
+@import './components/individuals/logo.scss';
 
 // Sections
-@import './components/sections/header';
-@import './components/sections/footer';
-@import './components/sections/home';
+@import './components/sections/header.scss';
+@import './components/sections/footer.scss';
+@import './components/sections/home.scss';
