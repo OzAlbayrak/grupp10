@@ -6,16 +6,16 @@ html, body {
   margin: 0px 0px 0px 0px;
 }
 
-.header a {
+header a {
   color: white;
 }
-.header .navbar-custom {
+header .navbar-custom {
   background-color: #6EB5C0;
 }
-.header .navbar-nav {
+header .navbar-nav {
   background-color: #6EB5C0;
 }
-.header ul {
+header ul {
   background-color: #6EB5C0;
 }
 
