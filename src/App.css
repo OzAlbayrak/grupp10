@@ -9,11 +9,21 @@ html, body {
 header a {
   color: white;
 }
+@media (width > 998px) {
+  header a {
+    color: #4A4E69;
+  }
+}
 header .navbar-custom {
   background-color: #6EB5C0;
 }
 header .navbar-nav {
   background-color: #6EB5C0;
+}
+@media (width > 998px) {
+  header .navbar-nav {
+    background-color: #F4D19A;
+  }
 }
 header ul {
   background-color: #6EB5C0;
