@@ -1,6 +1,10 @@
 header {
+    background-color: $color-theme-2;
+    display: grid;
+    align-items: center;
+    padding-top: 20px;
     a {
-        color: white;
+        color: black;
         @include desktop {  
             color: $color-theme-3;
         }
@@ -11,15 +15,21 @@ header {
         justify-content: end;
     }
 
+    .contact-icon {
+        visibility: hidden;
+     
+    }
+    
+
     .contact-us {
         visibility: hidden;
     }
     .navbar-custom {
-        background-color: $color-theme-1;
+        background-color: $color-theme-2;
     }
 
     .navbar-nav {
-        background-color: $color-theme-1;
+        background-color: $color-theme-2;
         @include desktop {  
             background-color: $color-theme-2;
         }
@@ -32,9 +42,7 @@ header {
         @include desktop {  
             background-color: $color-theme-2;
             height: 100px;
-            button {
-                visibility: hidden;
-            }
+            
         }
     }
     .contact-us{
@@ -44,6 +52,18 @@ header {
     }
     @include desktop {  
         background-color: $color-theme-2;
-   
+        height: 120px;
+        padding-top: 0px;
+        .brand-name {
+            visibility:hidden;
+            width: 100px;
+        }
+
+        .contact-icon {
+            visibility:visible;
+            display: grid;
+            justify-content: end;
+            width: 100px;
+        }
     }
 }

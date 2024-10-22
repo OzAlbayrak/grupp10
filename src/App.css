@@ -6,8 +6,14 @@ html, body {
   margin: 0px 0px 0px 0px;
 }
 
+header {
+  background-color: #F4D19A;
+  display: grid;
+  align-items: center;
+  padding-top: 20px;
+}
 header a {
-  color: white;
+  color: black;
 }
 @media (width > 998px) {
   header a {
@@ -18,14 +24,17 @@ header button {
   display: grid;
   justify-content: end;
 }
+header .contact-icon {
+  visibility: hidden;
+}
 header .contact-us {
   visibility: hidden;
 }
 header .navbar-custom {
-  background-color: #6EB5C0;
+  background-color: #F4D19A;
 }
 header .navbar-nav {
-  background-color: #6EB5C0;
+  background-color: #F4D19A;
 }
 @media (width > 998px) {
   header .navbar-nav {
@@ -40,9 +49,6 @@ header ul {
     background-color: #F4D19A;
     height: 100px;
   }
-  header .navbar button {
-    visibility: hidden;
-  }
 }
 @media (width > 998px) {
   header .contact-us {
@@ -52,6 +58,18 @@ header ul {
 @media (width > 998px) {
   header {
     background-color: #F4D19A;
+    height: 120px;
+    padding-top: 0px;
+  }
+  header .brand-name {
+    visibility: hidden;
+    width: 100px;
+  }
+  header .contact-icon {
+    visibility: visible;
+    display: grid;
+    justify-content: end;
+    width: 100px;
   }
 }
 
@@ -60,7 +78,7 @@ header ul {
   grid-template-columns: 1fr;
   grid-template-areas: "logo" "socialicon" "line" "address" "links" "contact" "cookisettings" "cookiepolicy" "copyright";
   background-color: #6EB5C0;
-  color: #ffffff;
+  color: black;
   text-align: center;
   clear: both;
   padding: 25px;
@@ -91,7 +109,7 @@ header ul {
 }
 .footer .socialicon {
   grid-area: socialicon;
-  color: #dfdfdf;
+  color: black;
   margin-top: 15px;
   margin-bottom: 8px;
   margin: 8px;
@@ -114,7 +132,7 @@ header ul {
   margin-top: 40px;
 }
 .footer .links a:link, .footer .links a:visited {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 .footer .links a:hover {
@@ -128,7 +146,7 @@ header ul {
   margin-bottom: 40px;
 }
 .footer .contact a:link, .footer .contact a:visited {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 .footer .contact a:hover {
@@ -142,7 +160,7 @@ header ul {
 .footer .cookisettings button {
   border: none;
   background: inherit;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   font-family: "Roboto", "Poppins", sans-serif;
   font-weight: 400;
@@ -164,7 +182,7 @@ header ul {
   text-align: center;
 }
 .footer .cookiepolicy a:link, .footer .cookiepolicy a:visited {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 .footer .cookiepolicy a:hover {
@@ -176,7 +194,7 @@ header ul {
   text-align: center;
 }
 .footer .copyright a:link, .footer .copyright a:visited {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 .footer .copyright a:hover {
@@ -186,7 +204,7 @@ header ul {
 @media (width > 998px) {
   .footer {
     background-color: #6EB5C0;
-    color: #ffffff;
+    color: black;
     clear: both;
     padding: 25px;
     position: relative;
@@ -223,7 +241,7 @@ header ul {
   }
   .footer .socialicon {
     grid-area: socialicon;
-    color: #dfdfdf;
+    color: black;
     margin: 8px;
     margin-right: 15px;
     text-align: end;
@@ -252,7 +270,7 @@ header ul {
     width: 200px;
   }
   .footer .links a:link, .footer .links a:visited {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
   }
   .footer .links a:hover {
@@ -266,7 +284,7 @@ header ul {
     margin-left: 95px;
   }
   .footer .contact a:link, .footer .contact a:visited {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
   }
   .footer .contact a:hover {
@@ -281,7 +299,7 @@ header ul {
   .footer .cookisettings button {
     border: none;
     background: inherit;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     font-family: "Roboto", "Poppins", sans-serif;
     font-weight: 400;
@@ -304,7 +322,7 @@ header ul {
     align-self: center;
   }
   .footer .cookiepolicy a:link, .footer .cookiepolicy a:visited {
-    color: #ffffff;
+    color: black;
   }
   .footer .cookiepolicy a:hover {
     text-decoration: none;
@@ -317,7 +335,7 @@ header ul {
     align-self: center;
   }
   .footer .copyright a:link, .footer .copyright a:visited {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
   }
   .footer .copyright a:hover {
