@@ -5,6 +5,15 @@ header {
             color: $color-theme-3;
         }
     }
+
+    button {
+        display: grid;
+        justify-content: end;
+    }
+
+    .contact-us {
+        visibility: hidden;
+    }
     .navbar-custom {
         background-color: $color-theme-1;
     }
@@ -17,5 +26,24 @@ header {
     }
     ul {
         background-color: $color-theme-1;
+    }
+
+    .navbar {
+        @include desktop {  
+            background-color: $color-theme-2;
+            height: 100px;
+            button {
+                visibility: hidden;
+            }
+        }
+    }
+    .contact-us{
+        @include desktop {  
+            background-color: $color-theme-2;
+        }
+    }
+    @include desktop {  
+        background-color: $color-theme-2;
+   
     }
 }

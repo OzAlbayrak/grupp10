@@ -14,6 +14,13 @@ header a {
     color: #4A4E69;
   }
 }
+header button {
+  display: grid;
+  justify-content: end;
+}
+header .contact-us {
+  visibility: hidden;
+}
 header .navbar-custom {
   background-color: #6EB5C0;
 }
@@ -27,6 +34,296 @@ header .navbar-nav {
 }
 header ul {
   background-color: #6EB5C0;
+}
+@media (width > 998px) {
+  header .navbar {
+    background-color: #F4D19A;
+    height: 100px;
+  }
+  header .navbar button {
+    visibility: hidden;
+  }
+}
+@media (width > 998px) {
+  header .contact-us {
+    background-color: #F4D19A;
+  }
+}
+@media (width > 998px) {
+  header {
+    background-color: #F4D19A;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "logo" "socialicon" "line" "address" "links" "contact" "cookisettings" "cookiepolicy" "copyright";
+  background-color: #6EB5C0;
+  color: #ffffff;
+  text-align: center;
+  clear: both;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.footer h5 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.footer .line {
+  grid-area: line;
+}
+.footer .logo {
+  grid-area: logo;
+  margin-bottom: 5px;
+  text-align: center;
+  max-height: 100px;
+}
+.footer .logo img {
+  object-fit: contain;
+}
+.footer .socialicon {
+  grid-area: socialicon;
+  color: #dfdfdf;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin: 8px;
+  text-align: center;
+}
+.footer .socialicon svg {
+  margin: 10px;
+}
+.footer .socialicon svg:hover {
+  text-decoration: none;
+  color: #4A4E69;
+}
+.footer .address {
+  grid-area: address;
+  text-align: center;
+}
+.footer .links {
+  grid-area: links;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer .links a:link, .footer .links a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .links a:hover {
+  text-decoration: none;
+  color: #4A4E69;
+}
+.footer .contact {
+  grid-area: contact;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer .contact a:link, .footer .contact a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .contact a:hover {
+  text-decoration: none;
+  color: #4A4E69;
+}
+.footer .cookisettings {
+  grid-area: cookisettings;
+  text-align: center;
+}
+.footer .cookisettings button {
+  border: none;
+  background: inherit;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.footer .cookisettings button:hover {
+  border: none;
+  background: inherit;
+  color: #4A4E69;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", "Poppins", sans-serif;
+  font-size: 16px;
+  color: #4A4E69;
+}
+.footer .cookiepolicy {
+  grid-area: cookiepolicy;
+  text-align: center;
+}
+.footer .cookiepolicy a:link, .footer .cookiepolicy a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .cookiepolicy a:hover {
+  text-decoration: none;
+  color: #4A4E69;
+}
+.footer .copyright {
+  grid-area: copyright;
+  text-align: center;
+}
+.footer .copyright a:link, .footer .copyright a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .copyright a:hover {
+  text-decoration: none;
+  color: #4A4E69;
+}
+@media (width > 998px) {
+  .footer {
+    background-color: #6EB5C0;
+    color: #ffffff;
+    clear: both;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 50;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .footer h5 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .footer .container {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px auto 200px 270px;
+    grid-template-rows: 30px 10px 250px auto;
+    grid-template-areas: "logo logo logo socialicon" "line line line line" "address address links contact" "cookisettings cookiepolicy cookiepolicy copyright";
+    margin: auto;
+  }
+  .footer .logo {
+    grid-area: logo;
+    margin-bottom: 5px;
+    margin-left: 12.5px;
+    text-align: left;
+    max-height: 50px;
+  }
+  .footer .logo img {
+    object-fit: contain;
+  }
+  .footer .socialicon {
+    grid-area: socialicon;
+    color: #dfdfdf;
+    margin: 8px;
+    margin-right: 15px;
+    text-align: end;
+  }
+  .footer .socialicon svg {
+    margin-left: 10px;
+  }
+  .footer .socialicon svg:hover {
+    text-decoration: none;
+    color: #4A4E69;
+  }
+  .footer .line {
+    grid-area: line;
+    margin-top: 10px;
+  }
+  .footer .address {
+    grid-area: address;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 39px;
+    width: 250px;
+  }
+  .footer .links {
+    grid-area: links;
+    text-align: left;
+    width: 200px;
+  }
+  .footer .links a:link, .footer .links a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer .links a:hover {
+    text-decoration: none;
+    color: #4A4E69;
+  }
+  .footer .contact {
+    grid-area: contact;
+    text-align: left;
+    width: 200px;
+    margin-left: 95px;
+  }
+  .footer .contact a:link, .footer .contact a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer .contact a:hover {
+    text-decoration: none;
+    color: #4A4E69;
+  }
+  .footer .cookisettings {
+    grid-area: cookisettings;
+    margin-left: 19px;
+    text-align: left;
+  }
+  .footer .cookisettings button {
+    border: none;
+    background: inherit;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto", "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .footer .cookisettings button:hover {
+    border: none;
+    background: inherit;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto", "Poppins", sans-serif;
+    font-size: 16px;
+    color: #4A4E69;
+  }
+  .footer .cookiepolicy {
+    grid-area: cookiepolicy;
+    margin-left: 0px;
+    text-align: left;
+    align-self: center;
+  }
+  .footer .cookiepolicy a:link, .footer .cookiepolicy a:visited {
+    color: #ffffff;
+  }
+  .footer .cookiepolicy a:hover {
+    text-decoration: none;
+    color: #4A4E69;
+  }
+  .footer .copyright {
+    grid-area: copyright;
+    margin-right: 25px;
+    text-align: right;
+    align-self: center;
+  }
+  .footer .copyright a:link, .footer .copyright a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer .copyright a:hover {
+    text-decoration: none;
+    color: #4A4E69;
+  }
 }
 
 .home {
