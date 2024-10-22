@@ -9,7 +9,11 @@ header {
             color: $color-theme-3;
         }
     }
-
+    a:hover {
+        text-decoration: none;
+        color: $color-theme-1;
+      }
+      
     button {
         display: grid;
         justify-content: end;
@@ -26,12 +30,39 @@ header {
     }
     .navbar-custom {
         background-color: $color-theme-2;
+        a {
+            color: black;
+            @include desktop {  
+                color: $color-theme-3;
+            }
+        }
+        a:hover {
+            text-decoration: none;
+            color: $color-theme-1;
+            @include desktop {  
+                color: $color-theme-1;
+            }
+          }
     }
 
     .navbar-nav {
         background-color: $color-theme-2;
+        a {
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $color-theme-1;
+        }
         @include desktop {  
             background-color: $color-theme-2;
+            a {
+                color: black;
+            }
+            a:hover {
+                text-decoration: none;
+                color: $color-theme-1;
+            }
         }
     }
     ul {
@@ -54,6 +85,15 @@ header {
         background-color: $color-theme-2;
         height: 120px;
         padding-top: 0px;
+
+        a {
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $color-theme-1;
+        }
+   
         .brand-name {
             visibility:hidden;
             width: 100px;
@@ -65,5 +105,7 @@ header {
             justify-content: end;
             width: 100px;
         }
+
+        
     }
 }

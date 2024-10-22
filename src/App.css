@@ -20,6 +20,10 @@ header a {
     color: #4A4E69;
   }
 }
+header a:hover {
+  text-decoration: none;
+  color: #6EB5C0;
+}
 header button {
   display: grid;
   justify-content: end;
@@ -33,12 +37,43 @@ header .contact-us {
 header .navbar-custom {
   background-color: #F4D19A;
 }
+header .navbar-custom a {
+  color: black;
+}
+@media (width > 998px) {
+  header .navbar-custom a {
+    color: #4A4E69;
+  }
+}
+header .navbar-custom a:hover {
+  text-decoration: none;
+  color: #6EB5C0;
+}
+@media (width > 998px) {
+  header .navbar-custom a:hover {
+    color: #6EB5C0;
+  }
+}
 header .navbar-nav {
   background-color: #F4D19A;
+}
+header .navbar-nav a {
+  color: black;
+}
+header .navbar-nav a:hover {
+  text-decoration: none;
+  color: #6EB5C0;
 }
 @media (width > 998px) {
   header .navbar-nav {
     background-color: #F4D19A;
+  }
+  header .navbar-nav a {
+    color: black;
+  }
+  header .navbar-nav a:hover {
+    text-decoration: none;
+    color: #6EB5C0;
   }
 }
 header ul {
@@ -60,6 +95,13 @@ header ul {
     background-color: #F4D19A;
     height: 120px;
     padding-top: 0px;
+  }
+  header a {
+    color: black;
+  }
+  header a:hover {
+    text-decoration: none;
+    color: #6EB5C0;
   }
   header .brand-name {
     visibility: hidden;
@@ -344,6 +386,23 @@ header ul {
   }
 }
 
-.home {
-  font-size: 16px;
+.home .active-home a {
+  text-decoration: none;
+  color: #6EB5C0;
+}
+.aboutus .active-aboutus a {
+  text-decoration: none;
+  color: #6EB5C0;
+}
+.contact .active-contact a {
+  text-decoration: none;
+  color: #6EB5C0;
+}
+.review .active-review a {
+  text-decoration: none;
+  color: #6EB5C0;
+}
+.services .active-services a {
+  text-decoration: none;
+  color: #6EB5C0;
 }
