@@ -388,7 +388,7 @@ header ul {
 
 .home .active-home a {
   text-decoration: none;
-  color: #6EB5C0;
+  color: #5A0066;
 }
 .home .card-style {
   display: grid;
@@ -493,7 +493,7 @@ header ul {
 
 .aboutus .active-aboutus a {
   text-decoration: none;
-  color: #6EB5C0;
+  color: #5A0066;
 }
 .aboutus .card-style .section-image-right-and-text-left .sectionbody {
   display: grid;
@@ -745,7 +745,7 @@ header ul {
 }
 .contact .active-contact a {
   text-decoration: none;
-  color: #6EB5C0;
+  color: #5A0066;
 }
 .contact .sectionherowithtext {
   display: grid;
@@ -794,7 +794,7 @@ header ul {
 }
 .review .active-review a {
   text-decoration: none;
-  color: #6EB5C0;
+  color: #5A0066;
 }
 .review .client-reviews {
   max-width: 1280px;
@@ -848,7 +848,7 @@ header ul {
 }
 .services .active-services a {
   text-decoration: none;
-  color: #6EB5C0;
+  color: #5A0066;
 }
 .services .product-list {
   display: grid;
