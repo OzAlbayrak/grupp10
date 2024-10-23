@@ -1,11 +1,121 @@
 .home {
+    
     .active-home{
         a {
             text-decoration: none;
             color: $color-theme-1;
         }
     }
-    @include desktop {  
+    
+    .card-style {
+        display: grid;
+        justify-items: center;
+
+        .actions {
+            display: grid;
+            justify-content: center;
+        }
+
+        .cards {
+            max-width: $section-max-width;
+            display: grid;
+            gap: 1rem;
+            padding: 0vh 0vw 0vh 0vw;
+            margin: $distance-section-star 0px $distance-section-end 0px;
         
+            button {
+                margin-left: 20px;
+                display: grid;
+                justify-content: flex-end;
+                display: block;
+                display: grid;
+            }
+
+            .title {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                letter-spacing: $h2-letter-spacing;
+                line-height: $h2-line-height;
+                margin: 0px $h2-margin $distance-title-to-text $h2-margin;
+            }
+            
+            .text {
+                max-width: $half-section-max-width;
+                font-weight: $text-font-weight;
+                font-size: $text-font-size;
+                line-height: $text-line-height;
+                margin: 0px $text-margin $distance-text-to-button $text-margin;
+            }
+            
+            .card-image {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                margin-left: $image-margin;
+                margin-right: $image-margin;
+            }
+            
+            .card-image img {
+                max-width: 250px;
+                max-height: 250px;
+            }
+            
+            .actions {
+                display: flex;
+                gap: 1rem;
+                justify-content: left;
+            }
+
+            .button-28 {
+                appearance: none;
+                background-color: transparent;
+                border: 2px solid #1A1A1A;
+                border-radius: 15px;
+                box-sizing: border-box;
+                color: #3B3B3B;
+                cursor: pointer;
+                display: inline-block;
+                font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                margin: 0;
+                min-height: 60px;
+                min-width: 0;
+                outline: none;
+                padding: 16px 24px ;
+                text-align: center;
+                text-decoration: none;
+                transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                width: 100%;
+                will-change: transform;
+                margin: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .button-28:disabled {
+                pointer-events: none;
+            }
+            
+            .button-28:hover {
+                color: #fff;
+                background-color: $color-theme-3;
+                box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+                transform: translateY(-2px);
+            }
+            
+            .button-28:active {
+                box-shadow: none;
+                transform: translateY(0);
+            }
+
+            @include desktop {  
+                grid-template-columns: 1fr 3fr;
+            }
+        }
     }
 }
