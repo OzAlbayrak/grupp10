@@ -1,9 +1,47 @@
 .home {
-    
     .active-home{
         a {
             text-decoration: none;
             color: $color-theme-4;
+            font-weight: 600;
+        }
+    }
+
+    .sectionslidingbackgroun1 {
+        background-image: url("/assets/images/office1.jpg");
+        z-index:1;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-color: #ffffff;  
+        @include desktop {
+            .sectionslidingbackground {
+                background-attachment: scroll; 
+            }
+        }
+    }
+
+    .sectionslidingbackground2 {
+        background-image: url("/assets/images/office2.jpg");
+        z-index:51;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-color: #ffffff;  
+        @include desktop {
+            .sectionslidingbackground {
+                background-attachment: scroll; 
+            }
         }
     }
     

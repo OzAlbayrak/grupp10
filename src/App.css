@@ -389,6 +389,43 @@ header ul {
 .home .active-home a {
   text-decoration: none;
   color: #5A0066;
+  font-weight: 600;
+}
+.home .sectionslidingbackgroun1 {
+  background-image: url("/assets/images/office1.jpg");
+  z-index: 1;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+@media (width > 998px) {
+  .home .sectionslidingbackgroun1 .sectionslidingbackground {
+    background-attachment: scroll;
+  }
+}
+.home .sectionslidingbackground2 {
+  background-image: url("/assets/images/office2.jpg");
+  z-index: 51;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+@media (width > 998px) {
+  .home .sectionslidingbackground2 .sectionslidingbackground {
+    background-attachment: scroll;
+  }
 }
 .home .card-style {
   display: grid;
@@ -494,6 +531,7 @@ header ul {
 .aboutus .active-aboutus a {
   text-decoration: none;
   color: #5A0066;
+  font-weight: 600;
 }
 .aboutus .card-style .section-image-right-and-text-left .sectionbody {
   display: grid;
@@ -746,6 +784,7 @@ header ul {
 .contact .active-contact a {
   text-decoration: none;
   color: #5A0066;
+  font-weight: 600;
 }
 .contact .sectionherowithtext {
   display: grid;
@@ -795,6 +834,7 @@ header ul {
 .review .active-review a {
   text-decoration: none;
   color: #5A0066;
+  font-weight: 600;
 }
 .review .client-reviews {
   max-width: 1280px;
@@ -849,6 +889,7 @@ header ul {
 .services .active-services a {
   text-decoration: none;
   color: #5A0066;
+  font-weight: 600;
 }
 .services .product-list {
   display: grid;
