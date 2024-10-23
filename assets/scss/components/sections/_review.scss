@@ -5,6 +5,58 @@
             color: $color-theme-1;
         }
     }
+
+    .client-reviews{
+        max-width: $section-max-width;
+        display: grid;
+        justify-self: center;
+        .ClientReview_Card {
+          min-height: 355px;
+          border-top: 5px solid $color-theme-1;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          font-weight: 700;
+          overflow: hidden;
+          padding: 60px 50px 0px;
+          position: relative;
+        }
+        .ClientReview_Top {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding-bottom: 30px;
+        }
+        .ClientReview_Pfp {
+          width: 70px;
+        }
+        .ClientReview_Stars {
+          font-size: 36px;
+          padding-left: 20px;
+          color: #FFBF00;
+        }
+        .ClientReview_Body {
+          padding-bottom: 20px;
+        }
+        .ClientReview_Name {
+          color: $color-theme-3;
+          font-size: 18px;
+          padding-bottom: 40px;
+        }
+        .ClientReview_Img img {
+          filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(180deg) brightness(1.1);
+          position: absolute;
+          right: -70px;
+          bottom: -50px;
+          z-index: -1;
+        }
+      img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover; /* To maintain aspect ratio and cover the entire container */
+        border: 1px solid #000; /* Add a 5px black border */
+        border-radius: 100px; /* Round the corners */
+      }
+    }
+
     @include desktop {  
         
     }
