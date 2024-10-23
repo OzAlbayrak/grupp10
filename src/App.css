@@ -495,6 +495,254 @@ header ul {
   text-decoration: none;
   color: #6EB5C0;
 }
+.aboutus .card-style .section-image-right-and-text-left .sectionbody {
+  display: grid;
+  justify-items: center;
+  background-color: #6EB5C0;
+}
+.aboutus .card-style .section-image-right-and-text-left .cards {
+  max-width: 1280px;
+  display: grid;
+  min-height: 400px;
+  justify-self: center;
+  margin: 60px 0px 60px 0px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "cardleft" "cardright";
+}
+.aboutus .card-style .section-image-right-and-text-left .cards .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-image-right-and-text-left .cards .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-image-right-and-text-left .cards img {
+  max-width: 300px;
+  margin: 0px 0px 16px 0px;
+  border-radius: 200px;
+}
+@media (width > 998px) {
+  .aboutus .card-style .section-image-right-and-text-left .cards {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "cardleft cardright";
+  }
+  .aboutus .card-style .section-image-right-and-text-left img {
+    max-width: 400px;
+    border-radius: 200px;
+  }
+}
+.aboutus .card-style .section-image-right-and-text-left .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus .card-style .section-image-right-and-text-left .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus .card-style .section-image-right-and-text-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 0px 0px 16px 0px;
+}
+.aboutus .card-style .section-image-right-and-text-left .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.aboutus .card-style .section-image-right-and-text-left .image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+.aboutus .card-style .section-image-right-and-text-left .actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+}
+.aboutus .card-style .section-image-left-and-text-right .sectionbody {
+  display: grid;
+  justify-items: center;
+  background-color: #F4D19A;
+}
+.aboutus .card-style .section-image-left-and-text-right .cards {
+  max-width: 1280px;
+  display: grid;
+  min-height: 400px;
+  justify-self: center;
+  margin: 60px 0px 60px 0px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "cardright" "cardleft";
+}
+.aboutus .card-style .section-image-left-and-text-right .cards .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-image-left-and-text-right .cards .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-image-left-and-text-right .cards img {
+  max-width: 300px;
+  margin: 0px 0px 16px 0px;
+  border-radius: 200px;
+}
+@media (width > 998px) {
+  .aboutus .card-style .section-image-left-and-text-right .cards {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "cardleft cardright";
+  }
+  .aboutus .card-style .section-image-left-and-text-right img {
+    max-width: 400px;
+    border-radius: 200px;
+  }
+}
+.aboutus .card-style .section-image-left-and-text-right .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus .card-style .section-image-left-and-text-right .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus .card-style .section-image-left-and-text-right .title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 0px 0px 16px 0px;
+}
+.aboutus .card-style .section-image-left-and-text-right .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.aboutus .card-style .section-image-left-and-text-right .image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+.aboutus .card-style .section-image-left-and-text-right .actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+}
+.aboutus .card-style .section-text-right-and-text-left .sectionbody {
+  display: grid;
+  justify-items: center;
+  background-color: white;
+}
+.aboutus .card-style .section-text-right-and-text-left .cards {
+  max-width: 1280px;
+  display: grid;
+  min-height: 400px;
+  justify-self: center;
+  margin: 60px 0px 60px 0px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "cardright" "cardleft";
+}
+.aboutus .card-style .section-text-right-and-text-left .cards .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-text-right-and-text-left .cards .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus .card-style .section-text-right-and-text-left .cards img {
+  max-width: 300px;
+  margin: 0px 0px 16px 0px;
+  border-radius: 200px;
+}
+@media (width > 998px) {
+  .aboutus .card-style .section-text-right-and-text-left .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cardleft cardright";
+  }
+  .aboutus .card-style .section-text-right-and-text-left img {
+    max-width: 400px;
+    border-radius: 200px;
+  }
+}
+.aboutus .card-style .section-text-right-and-text-left .cardleft {
+  grid-area: cardleft;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus .card-style .section-text-right-and-text-left .cardright {
+  grid-area: cardright;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #4A4E69;
+  color: #F4D19A;
+}
+.aboutus .card-style .section-text-right-and-text-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 0px 0px 16px 0px;
+}
+.aboutus .card-style .section-text-right-and-text-left .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.aboutus .card-style .section-text-right-and-text-left .image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+.aboutus .card-style .section-text-right-and-text-left .actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+}
 .contact .active-contact a {
   text-decoration: none;
   color: #6EB5C0;

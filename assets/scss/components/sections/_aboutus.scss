@@ -5,6 +5,317 @@
             color: $color-theme-1;
         }
     }
+    .card-style {
+        .section-image-right-and-text-left {
+            .sectionbody {
+                display: grid;
+                justify-items: center;
+                background-color: $color-theme-1;
+            }
+            
+            .cards {
+                max-width: $max-width;
+                display: grid;
+                min-height: 400px;
+                justify-self: center;
+                margin: $distance-section-star 0px $distance-section-end 0px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                'cardleft'
+                'cardright'
+                ;
+    
+                .cardleft {
+                    grid-area: cardleft;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .cardright {
+                    grid-area: cardright;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                img {
+                    max-width: 300px;
+                    margin: 0px 0px $distance-image-to-title 0px;
+                    border-radius: 200px;
+                }
+            }
+            
+            @include desktop {  
+                .cards {
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-areas: 
+                    'cardleft cardright'
+                    ;
+                }
+        
+                img {
+                    max-width: 400px;
+                    border-radius: 200px;
+                }
+            }
+            
+            .cardleft {
+                grid-area: cardleft;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+            }
+            
+            .cardright {
+                grid-area: cardright;
+                display: grid;
+                justify-content: end;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+            }
+            
+            .title {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                letter-spacing: $h2-letter-spacing;
+                line-height: $h2-line-height;
+                margin: 0px 0px $distance-title-to-text 0px;
+            }
+            
+            .text {
+                font-weight: $text-font-weight;
+                font-size: $text-font-size;
+                line-height: $text-line-height;
+            }
+            
+            .image {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                border-radius: 200px;
+            }
+        
+            .actions {
+                display: flex;
+                gap: 1rem;
+                justify-content: left;
+            }
+        }
+
+        .section-image-left-and-text-right {
+            .sectionbody {
+                display: grid;
+                justify-items: center;
+                background-color: $color-theme-2;
+            }
+            
+            .cards {
+                max-width: $max-width;
+                display: grid;
+                min-height: 400px;
+                justify-self: center;
+                margin: $distance-section-star 0px $distance-section-end 0px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                'cardright'
+                'cardleft'
+                ;
+    
+                .cardleft {
+                    grid-area: cardleft;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .cardright {
+                    grid-area: cardright;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                img {
+                    max-width: 300px;
+                    margin: 0px 0px $distance-image-to-title 0px;
+                    border-radius: 200px;
+                }
+            }
+            
+            @include desktop {  
+                .cards {
+                    grid-template-columns: 2fr 1fr;
+                    grid-template-areas: 
+                    'cardleft cardright'
+                    ;
+                }
+        
+                img {
+                    max-width: 400px;
+                    border-radius: 200px;
+                }
+            }
+            
+            .cardleft {
+                grid-area: cardleft;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+            }
+            
+            .cardright {
+                grid-area: cardright;
+                display: grid;
+                justify-content: end;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+            }
+            
+            .title {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                letter-spacing: $h2-letter-spacing;
+                line-height: $h2-line-height;
+                margin: 0px 0px $distance-title-to-text 0px;
+            }
+            
+            .text {
+                font-weight: $text-font-weight;
+                font-size: $text-font-size;
+                line-height: $text-line-height;
+            }
+            
+            .image {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                border-radius: 200px;
+            }
+        
+            .actions {
+                display: flex;
+                gap: 1rem;
+                justify-content: left;
+            }
+        }
+
+        .section-text-right-and-text-left {
+            .sectionbody {
+                display: grid;
+                justify-items: center;
+                background-color: white;
+            }
+            
+            .cards {
+                max-width: $max-width;
+                display: grid;
+                min-height: 400px;
+                justify-self: center;
+                margin: $distance-section-star 0px $distance-section-end 0px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                'cardright'
+                'cardleft'
+                ;
+    
+                .cardleft {
+                    grid-area: cardleft;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .cardright {
+                    grid-area: cardright;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                img {
+                    max-width: 300px;
+                    margin: 0px 0px $distance-image-to-title 0px;
+                    border-radius: 200px;
+                }
+            }
+            
+            @include desktop {  
+                .cards {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 
+                    'cardleft cardright'
+                    ;
+                }
+        
+                img {
+                    max-width: 400px;
+                    border-radius: 200px;
+                }
+            }
+            
+            .cardleft {
+                grid-area: cardleft;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+            }
+            
+            .cardright {
+                grid-area: cardright;
+                display: grid;
+                justify-content: end;
+                align-items: center;
+                max-width: $half-section-max-width;
+                padding-left: $text-padding;
+                padding-right: $text-padding;
+                background-color: $color-theme-3;
+                color: $color-theme-2;
+            }
+            
+            .title {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                letter-spacing: $h2-letter-spacing;
+                line-height: $h2-line-height;
+                margin: 0px 0px $distance-title-to-text 0px;
+            }
+            
+            .text {
+                font-weight: $text-font-weight;
+                font-size: $text-font-size;
+                line-height: $text-line-height;
+            }
+            
+            .image {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                border-radius: 200px;
+            }
+        
+            .actions {
+                display: flex;
+                gap: 1rem;
+                justify-content: left;
+            }
+        }
+    }
+    
+
     @include desktop {  
         
     }
