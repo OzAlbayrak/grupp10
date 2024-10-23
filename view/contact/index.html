@@ -48,11 +48,11 @@
             </div>
        
             <form>
-                <label for="email">Namn</label><br>
-                <input type="email" id="email" name="email" required>
+                <label for="name">Namn</label><br>
+                <input type="name" id="name" name="name" required autocomplete="off">
                 <br><br>
-                    <label for="email">Mejladress</label><br>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Mejladress</label><br>
+                <input type="email" id="email" name="email" required required autocomplete="off">
                 <br><br>
                 <label for="subject">Välj ämne</label><br>
                 <select name="subject" id="subject">
@@ -60,7 +60,7 @@
                     <option value="questions">Frågor om oss</option>
                 </select>
                 <br><br>
-                    <label for="text">Meddelande</label><br>
+                <label for="textarea">Meddelande</label><br>
                 <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Skriv ditt meddelande…" required></textarea>
                 <br><br><input type="submit" value="Submit">
             </form>
